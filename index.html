@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App and Games Downloads</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional Styles */
+        .menu-bg {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Brand -->
+            <div class="text-white font-semibold">
+                <a href="#" class="text-lg">Revals Apk</a>
+            </div>
+            <!-- Hamburger Menu -->
+            <div class="block lg:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Navbar Links -->
+            <div class="hidden lg:flex lg:items-center lg:w-auto">
+                <ul class="text-lg text-white lg:flex lg:space-x-4">
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">Apps</a></li>
+                    <li><a href="#" class="text-white">Games</a></li>
+                    <li><a href="contactus.html" class="text-white">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hamburger Menu (Mobile) -->
+    <div id="menu" class="lg:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50 hidden">
+        <div class="menu-bg w-56 absolute right-0 top-0 h-full py-6 px-4">
+            <ul class="space-y-4">
+                <li><a href="#" class="block text-lg text-blue-500">Home</a></li>
+                <li><a href="#" class="block text-lg text-blue-500">Apps</a></li>
+                <li><a href="#" class="block text-lg text-blue-500">Games</a></li>
+                <li><a href="contactus.html" class="block text-lg text-blue-500">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container mx-auto py-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Card -->
+            <div class="bg-white shadow-md p-4 rounded-md">
+                <img src="app1.jpg" alt="App 1" class="w-full h-40 object-cover rounded-md">
+                <div class="mt-4">
+                    <h2 class="text-lg font-semibold">App Name 1</h2>
+                    <p class="text-gray-600">Details about App 1</p>
+                    <a href="#" class="block mt-2 text-blue-500">Download</a>
+                </div>
+            </div>
+
+            <!-- Repeat similar card structure for other apps/games -->
+
+        </div>
+    </div>
+
+    <!-- Inline JavaScript for toggling hamburger menu -->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rev Apks</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-semibold text-center mb-6">Contact Us</h1>
+        <form  action="https://api.web3forms.com/submit" class="max-w-lg mx-auto" method="POST">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700">Name*</label>
+                <input type="text" required id="name" name="name" class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500">
+           
+                <input type="hidden" name="access_key" value="1072af89-192f-4801-a803-6cbe24174eef">
+
+            </div>
+
+            
+
+
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700">Email*</label>
+                <input type="email" required id="email" name="email" class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500">
+            </div>
+            <div class="mb-4">
+                <label for="subject" class="block text-gray-700">Subject</label>
+                <input type="text" id="subject" name="subject" class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500">
+            </div>
+            <!-- Hidden Input Field to Autofill with Website Name -->
+            <input type="hidden" id="source" name="source" value="Rev Apks">
+            <div class="mb-4 hidden">
+                <label for="source" class="block text-gray-700">Website Name</label>
+                <input type="text" id="source" name="source" value="Rev Apks" class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700">Message*</label>
+                <textarea id="message" required name="message" rows="4" class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
